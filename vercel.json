@@ -4,5 +4,11 @@
       "path": "/api/cron/fetch-stake-data",
       "schedule": "0 */4 * * *"
     }
+  ],
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
   ]
 }
